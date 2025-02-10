@@ -1,0 +1,72 @@
+**READ.ME**
+
+# Torrent File Exchange Scenario
+
+## Overview
+
+This project simulates a simplified torrent-like file exchange system using socket programming in C. The system consists of a server that handles multiple client connections and serves files to the clients upon request. 
+
+## Features
+
+**The server can handle multiple client connections simultaneously using multi-processing.
+**Clients can request and download files from the server in chunks of 1024 bytes.
+**The system supports transferring any type of file (text, binary, etc.).
+**The client displays the progress of the file download with a progress bar.
+**The server logs all client connections and file transfers, including details like the client’s IP address, connection time, requested file, and transfer success.
+
+## How to Run
+
+**Server
+
+1. Compile the server program using the following command:
+	make -f makesvr
+   server.out: srv9362.o sig_child.o send_list.o send_file.o log_info.o
+	cc -o server.out srv9362.o sig_child.o send_list.o send_file.o log_info.o
+
+
+2. Run the server:
+   ./server.out
+
+**Client
+
+1. Compile the client program using the following command:
+	make -f makeclient
+   client.out: cli2219.o recv_file.o
+	cc -o client.out cli2219.o recv_file.o
+2. Run the client:
+  	./client.out
+  	
+
+
+# Example Interaction
+
+**Server Output**
+  
+ waiting for client connections.....connection from 127.0.0.1, port 33272
+File opened successfully.
+File sent successfully
+SIGCHLD Received
+child 3426 terminated
+  
+- **Client Output**:
+  Connection Successful
+  Available files:
+  1. Project MID Progress Evaluation. docx
+  2.Azure DevOps . pdf
+  3.textclient 2 .txt
+
+Enter the number of the file you want to download:2
+Downloading file of size: 6138423 bytes
+Download progress : 10%
+Download progress : 20%
+Download progress : 30%
+Download progress : 40%
+Download progress : 50%
+Download progress : 60%
+Download progress : 70%
+Download progress : 80%
+Download progress : 90%
+Download progress : 100%
+file recived successfull
+
+
