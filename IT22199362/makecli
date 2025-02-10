@@ -1,0 +1,9 @@
+client.out: cli2219.o recv_file.o
+	cc -o client.out cli2219.o recv_file.o
+
+client.o: cli2219.c header.h
+	cc -c client.c
+
+recv_file.o: recv_file.c header.h
+	cc -c recv_file.c
+

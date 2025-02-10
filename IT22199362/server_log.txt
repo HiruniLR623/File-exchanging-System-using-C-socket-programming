@@ -1,0 +1,30 @@
+Client IP: 127.0.0.1
+Client Port: 33272
+Connected Time: 2024-09-30 20:05:47
+Requested File: Azure DevOps.pdf
+Transfer Status: Successful
+--------------------------
+Client IP: 127.0.0.1
+Client Port: 53442
+Connected Time: 2024-09-30 20:15:21
+Requested File: Project MID Progress Evaluation.docx
+Transfer Status: Successful
+--------------------------
+Client IP: 127.0.0.1
+Client Port: 40800
+Connected Time: 2024-09-30 20:15:29
+Requested File: textclient 2.txt
+Transfer Status: Successful
+--------------------------
+Client IP: 127.0.0.1
+Client Port: 60336
+Connected Time: 2024-09-30 20:15:40
+Requested File: textclient1
+Transfer Status: Successful
+--------------------------
+Client IP: 127.0.0.1
+Client Port: 60024
+Connected Time: 2024-09-30 20:16:04
+Requested File: Status1.mp4
+Transfer Status: Successful
+--------------------------

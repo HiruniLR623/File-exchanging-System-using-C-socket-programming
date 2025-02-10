@@ -1,0 +1,17 @@
+server.out: srv9362.o sig_child.o send_list.o send_file.o log_info.o
+	cc -o server.out srv9362.o sig_child.o send_list.o send_file.o log_info.o
+
+server.o: srv9362.c header.h
+	cc -c srv9362.c
+
+sig_child.o: sig_child.c header.h
+	cc -c sig_child.c
+
+send_list.o: send_list.c header.h
+	cc -c send_list.c
+
+send_file.o: send_file.c header.h
+	cc -c send_file.c
+
+log_info.o: log_info.c header.h
+	cc -c log_info.c
